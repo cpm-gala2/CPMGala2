@@ -3,7 +3,7 @@ from time import sleep
 
 BASE_URL: str = "https://cpmgala2.squareweb.app/api"
 
-class CPMGala2:
+class CPMGala:
 
     def __init__(self, access_key) -> None:
         self.auth_token = None
