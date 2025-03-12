@@ -1,13 +1,13 @@
 ﻿#!/usr/bin/python
 
-# Copyright (C) Anasov <me@anasov.ly> - All Rights Reserved
+# Copyright (C) @CPMGala <tg:@gala_original> - All Rights Reserved
 # Unauthorized copying of this file, via any medium is strictly prohibited
 # Proprietary and confidential
-# Written by Anasov <me@anasov.ly>, 05, May, 2024.
+# Written by @CPMGala <tg:@gala_original>, 05, May, 2024.
 
 #############################################
 # DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
-# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
+# OFFICIAL SELLER IS 'tg:@gala_original' AT TELEGRAM !!! #
 #############################################
 
 import random
@@ -19,10 +19,10 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from cpmnuker import CPMNuker
+from cpmgala import CPMGala
 
-__CHANNEL_USERNAME__ = "Toolcpm2"
-__GROUP_USERNAME__   = "cpm2a"
+__CHANNEL_USERNAME__ = "test272727_channel"
+__GROUP_USERNAME__   = "test272727_chat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -47,7 +47,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('AmerCPM2', font='drpepper')
+    brand_name = figlet_format('CPMGala2', font='drpepper')
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -55,7 +55,7 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text, end=None)
-    console.print("[bold green]♕ AmerCPM2[/bold green]: Car Parking Multiplayer 2 Hacking Tool.")
+    console.print("[bold green]♕ CPMGala2[/bold green]: Car Parking Multiplayer 2 Hacking Tool.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from the game before using this tool !.", end="\n\n")
@@ -128,7 +128,7 @@ if __name__ == "__main__":
         acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
         acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
         console.print("[bold cyan][%] Trying to Login[/bold cyan]: ", end=None)
-        cpm = CPMNuker(acc_access_key)
+        cpm = CPMGala(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
