@@ -1,9 +1,9 @@
 import requests
 from time import sleep
 
-BASE_URL: str = "https://CPMNuker.squareweb.app/api"
+BASE_URL: str = "https://CPMGala.squareweb.app/api"
 
-class CPMNuker:
+class CPMGala:
 
     def __init__(self, access_key) -> None:
         self.auth_token = None
